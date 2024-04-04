@@ -1,0 +1,45 @@
+/* Set a dark background color for the entire page */
+body {
+    background-color: #1F2937;
+  }
+  
+  /* Style for the nav bar */
+  .navbar {
+    /* Add drop shadow to the nav bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #2D3748;
+  }
+  
+  /* Style for the nav bar brand */
+  .navbar-brand {
+    color: #FFF;
+    font-weight: 500;
+  }
+  
+
+  
+  /* Style for the buttons */
+  button {
+    /* Add drop shadow to the buttons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    color: #1F2937;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+  }
+  
+  /* Style for the hover effect of the buttons */
+  button:hover {
+    background-color: #F3F4F6;
+    color: #a07d14;
+    cursor: pointer;
+  }
+  
+  /* Add padding to the body content to create space between the nav bar and the content */
+  .mat-typography {
+    padding: 2rem;
+  }
+  head {
+    color: #0000FF; /* This sets the color of the text to black blue */
+  }

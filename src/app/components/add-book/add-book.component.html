@@ -1,0 +1,62 @@
+
+<div class="">
+    <div class="mb-5">
+        <form class=" max-w-sm mx-auto" [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+          <div class="mb-2 text-white dark:bg-grey-900 rounded-lg shadow-xl p-4">
+            <label>Title</label>
+            <input class="form-control" placeholder="Ex. Juan Tamad" type="text" formControlName="title" required>
+          </div>
+  
+          <!-- <mat-form-field>
+            <mat-label>Enter Book Title</mat-label>
+            <input matInput placeholder="Ex. Harry Potter" formControlName="title">
+          </mat-form-field>  -->
+   
+          <div class="mb-2 text-white dark:bg-grey-900 rounded-lg shadow-xl p-4">
+            <label>Price</label>
+            <input class="form-control" placeholder="Ex. 599" type="text" formControlName="price" required>
+          </div>
+   
+          <div class="mb-2 text-white dark:bg-grey-900 rounded-lg shadow-xl p-4">
+            <label>Description</label>
+            <input class="form-control" placeholder="Lorem Ipsum" type="text" formControlName="description" required>
+          </div>
+          <div class=" mb-3 text-white">
+          <mat-chip-listbox aria-label="Book type" formControlName="book_type" >
+            <mat-chip-option mat-raised-button
+            matTooltip="If the author is a Citizen of the Republic of the Philippines "
+            aria-label="Button that displays a tooltip when focused or hovered over" color="warn">Local Author</mat-chip-option>
+            <mat-chip-option mat-raised-button
+            matTooltip="If the author is not from the Philippines and is not a Citizen of the Philippines "
+            aria-label="Button that displays a tooltip when focused or hovered over" color="accent">Foreign Author</mat-chip-option>
+            <mat-chip-option color="accent" disabled="true" 
+            matTooltip="We currently do not accept books with Unknown Authors"
+            aria-label="Button that displays a tooltip when focused or hovered over">Unknown Author</mat-chip-option>
+          </mat-chip-listbox>
+          </div>
+          
+          <div class="mb-2 text-center">
+            <button class="text-white dark:bg-grey-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="submit">Add Book</button>
+          </div>
+          
+          
+        </form>
+    </div>
+  
+  </div>
+  <div style="width: 30%; align-items: center; text-align: center; margin-left: 35%;">
+  <mat-accordion  >
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Notice!
+        </mat-panel-title>
+        <mat-panel-description>
+          Unknown Authors Unavailable
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>As a safety measure, we currently do not take in books with Unknown Authors to avoid plagiarism. Thank you for your understanding.</p>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>
